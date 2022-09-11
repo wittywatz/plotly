@@ -49,13 +49,25 @@ const ThemeSelector = () => {
             </Box>
           </MenuButton>
           <MenuList maxWidth="6.25rem">
-            <MenuItem icon={<Light />} onClick={() => setValue('Light')}>
+            <MenuItem
+              data-testid="theme-menu-item"
+              icon={<Light />}
+              onClick={() => setValue('Light')}
+            >
               Light
             </MenuItem>
-            <MenuItem icon={<Dark />} onClick={() => setValue('Dark')}>
+            <MenuItem
+              data-testid="theme-menu-item"
+              icon={<Dark />}
+              onClick={() => setValue('Dark')}
+            >
               Dark
             </MenuItem>
-            <MenuItem icon={<System />} onClick={() => setValue('System')}>
+            <MenuItem
+              data-testid="theme-menu-item"
+              icon={<System />}
+              onClick={() => setValue('System')}
+            >
               System
             </MenuItem>
           </MenuList>

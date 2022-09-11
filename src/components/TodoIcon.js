@@ -3,7 +3,10 @@ import { Box, Image } from '@chakra-ui/react';
 
 const TodoIcon = () => {
   return (
-    <Box width={{ base: '100%', sm: '100%', xl: '52%' }}>
+    <Box
+      width={{ base: '100%', sm: '100%', xl: '52%' }}
+      data-testid="todo-icon"
+    >
       <Image
         width="100%"
         objectFit="cover"

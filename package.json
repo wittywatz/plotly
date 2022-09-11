@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --watch"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.9",
@@ -21,7 +22,11 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^6.3.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "eslint": "8.23.0",
-    "eslint-config-next": "12.3.0"
+    "eslint-config-next": "12.3.0",
+    "jest": "^29.0.3",
+    "jest-environment-jsdom": "^29.0.3"
   }
 }
