@@ -1,18 +1,11 @@
-import Head from "next/head";
-import Image from "next/image";
-import {
-  useColorMode,
-  Box,
-  Stack,
-  useColorModeValue,
-  useMediaQuery,
-} from "@chakra-ui/react";
+import Head from 'next/head';
+import { Box, Stack } from '@chakra-ui/react';
 
-import CTAtext from "../src/components/CTAtext";
-import Form from "../src/components/Form";
-import Layout from "../src/components/Layout";
-import TodoIcon from "../src/components/TodoIcon";
-import AffiliationsIcon from "../src/components/AffiliationsIcon";
+import CTAtext from '../src/components/CTAtext';
+import Form from '../src/components/Form';
+import Layout from '../src/components/Layout';
+import TodoIcon from '../src/components/TodoIcon';
+import AffiliationsIcon from '../src/components/AffiliationsIcon';
 
 export default function Home() {
   return (
@@ -28,7 +21,7 @@ export default function Home() {
           <Box>
             <Stack
               display="flex"
-              direction={{ base: "column", sm: "column", xl: "row" }}
+              direction={{ base: 'column', sm: 'column', xl: 'row' }}
               position="relative"
             >
               <CTAtext />
@@ -36,15 +29,15 @@ export default function Home() {
             </Stack>
             <Stack
               display="flex"
-              direction={{ base: "column", sm: "column", xl: "row" }}
+              direction={{ base: 'column', sm: 'column', xl: 'row' }}
               position="relative"
-              zIndex={"-2"}
+              zIndex={'-2'}
               top={{
-                base: "-3rem",
-                sm: "-3rem",
-                md: "-5rem",
-                xl: "-4.5rem",
-                "2xl": "-10rem",
+                base: '-3rem',
+                sm: '-3rem',
+                md: '-5rem',
+                xl: '-4.5rem',
+                '2xl': '-10rem',
               }}
             >
               <TodoIcon />

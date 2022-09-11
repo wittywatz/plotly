@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import {
   useColorMode,
   MenuItem,
@@ -7,18 +7,16 @@ import {
   MenuList,
   Button,
   Box,
-  useMediaQuery,
-} from "@chakra-ui/react";
+} from '@chakra-ui/react';
 import {
   ChevronDownIcon,
   ChevronUpIcon,
   SunIcon,
   MoonIcon,
-} from "@chakra-ui/icons";
-import Light from "../assets/Light.svg";
-import Dark from "../assets/Dark.svg";
-import System from "../assets/System.svg";
-import useSystemDefaultTheme from "../hooks/useSystemDefaultTheme";
+} from '@chakra-ui/icons';
+import Light from '../assets/Light.svg';
+import Dark from '../assets/Dark.svg';
+import System from '../assets/System.svg';
 
 const colorModeIcon = {
   Light: <SunIcon />,
@@ -44,20 +42,20 @@ const ThemeSelector = () => {
             isActive={isOpen}
             as={Button}
             rightIcon={isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
-            display={"flex"}
+            display={'flex'}
           >
             <Box display="flex">
               {colorModeIcon[value]} &nbsp;&nbsp;<p>{value}</p>
             </Box>
           </MenuButton>
           <MenuList maxWidth="6.25rem">
-            <MenuItem icon={<Light />} onClick={() => setValue("Light")}>
+            <MenuItem icon={<Light />} onClick={() => setValue('Light')}>
               Light
             </MenuItem>
-            <MenuItem icon={<Dark />} onClick={() => setValue("Dark")}>
+            <MenuItem icon={<Dark />} onClick={() => setValue('Dark')}>
               Dark
             </MenuItem>
-            <MenuItem icon={<System />} onClick={() => setValue("System")}>
+            <MenuItem icon={<System />} onClick={() => setValue('System')}>
               System
             </MenuItem>
           </MenuList>
